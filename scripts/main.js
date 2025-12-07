@@ -88,11 +88,10 @@ function renderBoard() {
     });
 
     // Save display
-    const container =
-    document.getElementById("list-div") ||
-    document.getElementById("quote-div");
-
-    container.innerHTML = html;
+    let listDiv = document.getElementById('list-div');
+    if(listDiv) {
+        listDiv.innerHTML = html;
+    }
     document.querySelector('.mastery').innerHTML = `Mastery: ${mastery}`;
 
     // Yup, idk much about professional design but this seems pretty messy 
@@ -114,3 +113,4 @@ function handleEvents() {
 
     acceptBtn.addEventListener('click',  getInput);
 }
+
