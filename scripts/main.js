@@ -35,7 +35,7 @@ function handleEmptyPage() {
 
         // Id changed when task === 0
         let listDiv = document.getElementById('list-div');
-        listDiv.id = 'quote-div';
+        if (listDiv) listDiv.id = 'quote-div';
 
         // Abracadabra, display the quotes!
         let html = '';
@@ -53,10 +53,11 @@ function getInput() {
 
         // Reassign id :)
         let listDiv = document.getElementById('quote-div');
-        listDiv.id = 'list-div';
+        if (listDiv) listDiv.id = 'list-div';
 
         inputTask.value = '';
         renderBoard();
+        handleEmptyPage();
     }
 }
 
@@ -87,7 +88,11 @@ function renderBoard() {
     });
 
     // Save display
-    document.getElementById('list-div').innerHTML = html;
+    const container =
+    document.getElementById("list-div") ||
+    document.getElementById("quote-div");
+
+    container.innerHTML = html;
     document.querySelector('.mastery').innerHTML = `Mastery: ${mastery}`;
 
     // Yup, idk much about professional design but this seems pretty messy 
