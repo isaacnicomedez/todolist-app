@@ -1,0 +1,61 @@
+.header-div {
+    font-family: "Pixelify Sans", "Oswald";
+    background-image: url(../img/wood.webp);
+    color: white;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    min-height: 60px;
+    padding: 20px 40px 20px 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    box-shadow: 4px 4px 8px rgba(0,0,0,0.2);
+}
+
+h1 {
+    font-family: "Pixelify Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    width: 50%;
+}
+
+.points-div {
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    gap: 20px;
+    align-items: center;
+}
+
+.mastery {
+    border: 1px solid gold;
+    border-radius: 80px;
+    padding: 8px 26px;
+    background-color: darkred;
+    color: gold;
+}
+
+#mastery:hover {
+    cursor: pointer;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+    transition: ease-out 0.6s;
+    border: 1px solid white;
+    padding: 8px;
+    outline: none;
+}
+
+a:hover {
+   border: 1px solid gold;
+   color: black;
+   padding: 8px;
+   transition: ease-out 0.6s;
+   box-shadow: inset 200px 0 0 0 gold;
+   outline: none;
+}

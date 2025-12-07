@@ -1,0 +1,180 @@
+#list-div {
+    background: transparent;
+    margin: auto;
+    width: 80%;
+    min-height: 40vh;
+    flex: 1;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-auto-rows: 200px;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+#quote-div {
+    background: transparent;
+    margin: auto;
+    width: 80%;
+    min-height: 40vh;
+    text-align: center;
+    align-content: space-around;
+    font-size: 36px;
+    color: #000066;
+}
+
+#quote-div h3 span{
+    font-size: 20px;
+}
+
+.task-div {
+    background-color: rgb(224, 206, 164);
+    border-radius: 8px;
+    box-shadow: 4px 4px 8px rgba(0,0,0,0.2);
+    display: flex;
+    flex-direction: column;
+}
+
+.task-description {
+    padding: 1rem;
+    height: 80%;
+    overflow-y: auto;
+    border-radius: 8px 8px 0px 0px;
+}
+
+.options-div {
+    height: 20%;
+    display: flex;
+    justify-content: space-around;
+    border-radius: 0px 0px 8px 8px;
+}
+
+.choice {
+    height: 100%;
+    width: 50%;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+.choice1 {
+    border-radius: 0px 0px 0px 8px;
+    border-right: 1px solid rgba(0,0,0,0.15);
+    border-top: 1px solid rgba(0,0,0,0.15);
+}
+
+.choice2 {
+    border-radius: 0px 0px 8px 0px;
+    border-left: 1px solid rgba(0,0,0,0.15);
+    border-top: 1px solid rgba(0,0,0,0.15);
+}
+
+.choice:hover {
+    border: none;
+    background-color: rgb(190, 178, 149);
+    cursor: pointer;
+}
+
+.choice1:hover {
+    color: green;
+}
+
+.choice2:hover {
+    color: orangered;
+    
+}
+
+#achievements-div {
+    background-color: rgb(224, 206, 164);
+    border-radius: 8px;
+    min-height: 500px;
+    margin: auto;
+    width: 80%;
+    box-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+    padding: 20px;
+}
+
+#achievements-div h2 {
+    font-size: 18px;
+    text-align: center;
+    padding: 4px;
+    border: 1px solid rgb(180, 161, 115);
+    border-radius: 8px;
+    box-shadow: 1px 1px 2px rgb(180, 161, 115);
+    margin-bottom: 10px;
+}
+
+#achievements-div p {
+    width: 98%;
+    margin: auto;
+    border: 1px solid rgb(180, 161, 115);
+    padding: 3px;
+    border-radius: 6px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 2px;
+}
+
+#achievements-div p img {
+    background: transparent;
+    width: 2%;
+    height: 2%;
+}
+
+#failed-div {
+    background-color: rgb(224, 206, 164);
+    border-radius: 8px;
+    min-height: 500px;
+    margin: 20px auto 0px auto;
+    width: 80%;
+    box-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+    padding: 20px;
+}
+
+#failed-div h2 {
+    font-size: 18px;
+    text-align: center;
+    padding: 4px;
+    border: 1px solid rgb(180, 161, 115);
+    border-radius: 8px;
+    box-shadow: 1px 1px 2px rgb(180, 161, 115);
+    margin-bottom: 10px;
+}
+
+#failed-div p {
+    width: 98%;
+    margin: auto;
+    border: 1px solid rgb(180, 161, 115);
+    padding: 3px;
+    border-radius: 6px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 2px;
+}
+
+#failed-div p button {
+    padding: 8px;
+    background-color: green;
+    color: white;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+#links-bar {
+    margin: 40px auto -220px auto;
+    width: 80%;
+    min-height: 140px;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 20px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 2px 2px 2px 4px rgba(0,0,0,0.2);
+}
+
+#links-bar h3 {
+    border-bottom: 1px solid rgba(0,0,0,0.2);
+    padding: 8px;
+}

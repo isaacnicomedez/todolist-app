@@ -1,0 +1,35 @@
+#input-div {
+    background-image: url(../img/bricks.webp);
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#input-div input {
+    padding: 10px;
+    flex: 1;
+    margin-right: 20px;
+    font-size: 16px;
+    border: 2px solid orangered;
+    border-radius: 8px;
+    box-shadow: rgba(0,0,0,0.15);
+    outline: none;
+}
+
+#input-div button {
+    background-color: orangered;
+    box-shadow: rgba(0,0,0,0.15);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 10px;
+    margin-right: 10px;
+}
+
+#input-div button:hover {
+    cursor: pointer;
+    background-color: rgb(243, 103, 52);
+}
